@@ -86,6 +86,7 @@ input is in the correct format!
 
 Let's look at an example where we are verifying if someone typed in a 10-digit
 phone number in the proper format. We will accept either of these formats:
+
 - (XXX) XXX-XXXX
 - (XXX)XXX-XXXX
 
@@ -93,9 +94,10 @@ Let's also assume any of the digits (0-9) are acceptable phone numbers too for
 now!
 
 Before we write the code, go ahead into Regex 101 and see if you can write a
-regular expression pattern that would match either of these formats! If you need
-an example of a test string, you can use `(555) 555-1234`. Try not to look at
-the code below too when you write it!
+regular expression pattern that would match either of these formats! One hint is
+you will need to escape the parentheses. To do so, place a `\` in front of them.
+So: `\(` and `\)`. If you need an example of a test string, you can use
+`(555) 555-1234`. Try not to look at the code below when you write the regex!
 
 Were you able to come up with a regular expression pattern? Great if you got it!
 
